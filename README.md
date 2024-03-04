@@ -22,6 +22,11 @@ Red P2P No estructurada basada en servidor central con microservicios e implemen
 - Consulta de recursos (query, sendIndex)
 - Servicio de transferencia de archivos (download, upload)
 - Servicio de cambio de moneda (currency exchange)
+- Rotación de las responsabilidades (Round Robin).
+- Servicio de Bootstrap o inicialización de los nuevos peers a la red P2P (Archivos setup.py y los .env).
+- Implementación de comunicación basada en gRPC y API REST.
+- Uso de Docker para la creacion y despliegue de contenedores.
+- Despliegue del reto en AWS Academy.
 
 ### Requisitos no funcionales
 

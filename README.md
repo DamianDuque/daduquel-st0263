@@ -66,11 +66,11 @@ Se utilizaron Python y Go. el primero para la construcción de los peers y el se
 
 ## Principales librerias utilizadas y sus versiones
 
-grpcio==1.62.0
-grpcio-tools==1.62.0
-protobuf==4.25.3
-python-dotenv==1.0.1
-requests==2.28.1
+- grpcio==1.62.0
+- grpcio-tools==1.62.0
+- protobuf==4.25.3
+- python-dotenv==1.0.1
+- requests==2.28.1
 
 ## Como se compila y ejecuta.
 

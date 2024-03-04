@@ -4,10 +4,10 @@
 
 # Profesor: Edwin Nelson Montoya Munera, emontoya@eafit.edu.co
 
-[![Video sustentación](https://img.youtube.com/vi/aJGjl9WYsvQ&ab/hqdefault.jpg)](https://www.youtube.com/embed/aJGjl9WYsvQ&ab)
+# Video sustentación
+[![Video sustentacion](https://img.youtube.com/vi/aJGjl9WYsvQ/0.jpg)](https://www.youtube.com/watch?v=aJGjl9WYsvQ&ab_channel=DamianDuque)
 
-[<img src="https://img.youtube.com/vi/aJGjl9WYsvQ&ab/hqdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/aJGjl9WYsvQ&ab)
+
 
 # Nombre del proyecto: Reto 1 y 2
 

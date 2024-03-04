@@ -1,7 +1,9 @@
 *.env
 peer/.env
 central_server/.env
-# IDE specific files
+
+
+# IDE files
 .idea/
 .vscode/
 *.pyc

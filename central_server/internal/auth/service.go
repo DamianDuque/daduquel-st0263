@@ -3,10 +3,11 @@ package auth
 import (
 	"errors"
 	"fmt"
-	"github.com/golang-jwt/jwt"
 	"math/rand"
 	"os"
 	"time"
+
+	"github.com/golang-jwt/jwt"
 )
 
 var (
@@ -110,20 +111,23 @@ func (s *ServiceClient) AssignPeer(excludedPeerr Peer) (location string, err err
 
 }
 func (s *ServiceClient) SelectRandomPeer(users []string, excludedUser Peer) (Peer, error) {
-	if len(users) ==0 {
+	if len(users) == 0 {
 		return Peer{}, ErrNoPeersAvailable
 	}
-	if len(users) == 1 && users[0] == excludedUser.Username{
+	if len(users) == 1 && users[0] == excludedUser.Username {
 		return Peer{}, ErrNoPeersAvailable
 	}
 	// Loop until it finds a random user that is not the excluded user
 	var selectedUser string
-	for {
+	for i := 0; i < len(users); i++ {
 		randomIndex := rand.Intn(len(users))
 		if users[randomIndex] != excludedUser.Username {
 			selectedUser = users[randomIndex]
 			break
 		}
+	}
+	if selectedUser == "" {
+		return Peer{}, ErrNoPeersAvailable
 	}
 
 	peer, err := s.GetUser(selectedUser)

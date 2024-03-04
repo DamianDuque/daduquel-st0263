@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+
+  pclient:
+    build:
+      context: ./peer
+    command: python main.py
+    env_file:
+      - ./peer/.env
+    volumes:
+      - ./peer:/app
+    networks:
+      - reto-1
+
+  pserver:
+    build:
+      context: ./peer
+    command: python pserver.py
+    env_file:
+      - ./peer/.env
+    expose:
+      - 9000
+    ports:
+      - 9000:9000
+    volumes:
+      - ./peer:/app
+    networks:
+      - reto-1
+
+networks:
+  reto-1:
